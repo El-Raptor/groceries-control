@@ -1,4 +1,4 @@
-package com.raptor.groceries.model;
+package com.raptor.groceries;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
