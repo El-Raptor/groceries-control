@@ -1,4 +1,4 @@
-package com.raptor.groceries;
+package com.raptor.groceries.model;
 
 import jakarta.persistence.*;
 import lombok.*;

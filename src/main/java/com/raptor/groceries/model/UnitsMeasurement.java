@@ -1,4 +1,4 @@
-package com.raptor.groceries;
+package com.raptor.groceries.model;
 
 public enum UnitsMeasurement {
     UN, KG
