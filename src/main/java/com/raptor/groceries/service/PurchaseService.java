@@ -33,7 +33,7 @@ public class PurchaseService {
                 .store(store)
                 .build();
 
-        // Mapear os itens e calcular os preços totais de cada um
+        // Map items and calculate their total prices
         List<PurchaseItem> items = dto.items().stream().map(itemDto -> {
             Product product = productRepository.findById(itemDto.productId())
                     .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
@@ -52,7 +52,7 @@ public class PurchaseService {
 
         purchase.setItems(items);
 
-        // Calcular o valor total da compra somando o total de todos os itens
+        // Calculate purchase total value by summing all items total
         BigDecimal purchaseTotal = items.stream()
                 .map(PurchaseItem::getTotalPrice)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
