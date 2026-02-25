@@ -24,7 +24,7 @@ services:
       - backend
 
   postgres:
-    container_name: postgres
+    container_name: postgres-groceries
     image: postgres:17.0
     restart: always
     environment:
